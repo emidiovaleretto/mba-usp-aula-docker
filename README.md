@@ -1,3 +1,5 @@
+![MBA USB/ESALQ](https://i.imgur.com/MgViuM3.jpg)
+
 ## Understanding Docker's Command Line Interface (Docker CLI)
 
 ### Root folder for all codes: docker-class
@@ -37,14 +39,14 @@ docker ps
 Type in the terminal:
 
 ```bash
-# Enter the folder 1-criar-imagem-script
-cd 1-criar-imagem-script
+# Enter the folder 1-create-image-script
+cd 1-create-image-script
 
-# Generate an image from the Dockerfile with the name imagem-script
-docker build . -t imagem-script
+# Generate an image from the Dockerfile with the name image-script
+docker build . -t image-script
 
-# Run a container from the image with the name imagem-script
-docker run imagem-script
+# Run a container from the image with the name image-script
+docker run image-script
 
 # Delete the container that was just created using its ID
 # Check the container ID
@@ -57,7 +59,7 @@ docker rm `CONTAINER_ID`
 docker ps -a
 
 # Run the image-script container and remove it after executing all lines in Dockerfile
-docker run --rm imagem-script
+docker run --rm image-script
 
 # Check the container status after removing the container with the image image-script
 docker ps -a
@@ -73,14 +75,14 @@ print("This script has been modified")
 Type in the terminal
 
 ```bash
-# Run the script from the imagem-script with the --rm argument
-docker run --rm imagem-script
+# Run the script from the image-script with the --rm argument
+docker run --rm image-script
 
-# Generate an imagem from the Dockerfile with the name imagem-script-altered
-docker build . -t imagem-script-altered
+# Generate an imagem from the Dockerfile with the name image-script-altered
+docker build . -t image-script-altered
 
-# Run the script from the imagem-script-altered with the --rm argument
-docker run --rm imagem-script-altered
+# Run the script from the image-script-altered with the --rm argument
+docker run --rm image-script-altered
 ```
 
 ## Creating a Container that Doesn't Stop After Running all Lines in Dockerfile
