@@ -22,4 +22,4 @@ services:
     environment:
       - USERNAME=${USERNAME}
     # comando a ser utilizado quando o container for criado
-    command: uvicorn app.main:app --host 0.0.0.0 --port 8000
+    command: uvicorn app.main:app --host 0.0.0.0 --port 8000 --reload
